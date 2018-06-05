@@ -1,0 +1,208 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<header>
+  <img class="logo" src="../img/HTML5-Logo.png" height="auto" />
+
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <div class="spinner-master2">
+        	  <input type="checkbox" id="spinner-form2" />
+        	  <label for="spinner-form2" class="spinner-spin2">
+        		<div class="spinner2 diagonal part-1"></div>
+        		<div class="spinner2 horizontal"></div>
+        		<div class="spinner2 diagonal part-2"></div>
+        	  </label>
+        	</div>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" >
+        <ul class="nav navbar-nav">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Products <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Add Product</a></li>
+            </ul>
+          </li>
+
+          <li><a href="#">Help</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+</header>
+
+
+
+<div class="container">
+  <div class="row col-md-6 col-centered">
+  <form>
+    <div class="form-group col-md-12">
+      <label for="formGroupExampleInput">Title</label>
+      <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input">
+    </div>
+    <div class="form-group col-md-12">
+      <label for="formGroupExampleInput">Publishing date</label>
+      <input type="date" class="form-control" id="formGroupExampleInput" placeholder="Example input">
+    </div>
+    <div class="form-group col-md-12">
+      <label for="formGroupExampleInput">Author</label>
+      <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input">
+    </div>
+
+    <div class="col-md-6">
+      <label for="formGroupExampleInput">Current price</label>
+     <input type="text" class="form-control" placeholder="$42.40">
+   </div>
+   <div class="col-md-6">
+     <label for="formGroupExampleInput">Old price</label>
+     <input type="text" class="form-control" placeholder="$44.99">
+   </div>
+
+   <div class="form-group col-md-12">
+     <label for="formGroupExampleInput">About this product</label>
+     <textarea type="textarea" rows="5" class="form-control" id="formGroupExampleInput" placeholder="enter text...">
+   </div>
+
+   <hr class="col-md-12">
+
+   <h3 class="col-md-12">Product details</h3>
+
+   <div class="form-group col-md-12">
+     <label for="formGroupExampleInput">Paperback</label>
+     <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input">
+   </div>
+   <div class="form-group col-md-12">
+     <label for="formGroupExampleInput">Publisher</label>
+     <textarea type="textarea" rows="5" class="form-control" id="formGroupExampleInput" placeholder="enter text...">
+   </div>
+
+   <div class="form-group col-md-12">
+   <label for="inputState">Language</label>
+     <select id="inputState" class="form-control">
+       <option selected>en</option>
+       <option >ro</option>
+       <option>other</option>
+     </select>
+   </div>
+
+   <div class="col-md-6">
+     <label for="formGroupExampleInput">ISBN-10</label>
+    <input type="text" class="form-control" placeholder="5165181312315">
+  </div>
+  <div class="col-md-6">
+    <label for="formGroupExampleInput">ISBN-13</label>
+    <input type="text" class="form-control" placeholder="5161848448484">
+  </div>
+
+  <P class="form-group col-md-12">Product dimension</P>
+
+  <div class="col-md-4">
+    <label for="formGroupExampleInput">Width</label>
+   <input type="text" class="form-control" placeholder="5165181312315">
+ </div>
+ <div class="col-md-4">
+   <label for="formGroupExampleInput">Thickness</label>
+   <input type="text" class="form-control" placeholder="5161848448484">
+ </div>
+ <div class="col-md-4">
+   <label for="formGroupExampleInput">Width</label>
+  <input type="text" class="form-control" placeholder="5165181312315">
+</div>
+
+    <hr class="col-md-12">
+
+<div class="check">
+  <h1 class="title">Custom Checkboxes</h1>
+  <form action="#">
+    <ul class="unstyled centered">
+      <li>
+      <input class="styled-checkbox" id="styled-checkbox-1" type="checkbox" value="value1">
+      <label for="styled-checkbox-1">Checkbox</label>
+      </li>
+      <li>
+      <input class="styled-checkbox" id="styled-checkbox-2" type="checkbox" value="value2" checked>
+      <label for="styled-checkbox-2">CSS Only</label>
+      </li>
+      <li>
+      <input class="styled-checkbox" id="styled-checkbox-3" type="checkbox" value="value3" disabled>
+      <label for="styled-checkbox-3">A disabled checkbox</label>
+      </li>
+      <li>
+      <input class="styled-checkbox" id="styled-checkbox-4" type="checkbox" value="value4">
+      <label for="styled-checkbox-4">Fourth option</label>
+      </li>
+    </ul>
+  </form>
+
+</div>
+
+
+<div class="radiob">
+  <h1 class="title">Custom Radio-group</h1>
+	<form action="#" class="centered">
+	  <p>
+		<input type="radio" id="test1" name="radio-group" checked>
+		<label for="test1">Apple</label>
+	  </p>
+	  <p>
+		<input type="radio" id="test2" name="radio-group">
+		<label for="test2">Peach</label>
+	  </p>
+	  <p>
+		<input type="radio" id="test3" name="radio-group">
+		<label for="test3">Orange</label>
+	  </p>
+	</form>
+
+
+
+
+</div>
+
+
+
+
+
+
+  </div>
+</div>
+
+<div class="lbutton" id="includedContent">
+<button type="button" class="btn btn-light btn-lg">Submit</button>
+</div>
+
+
+
+  </form>
+
+
+
+</div>
+
+
+
+
+<footer>
+  <h3>Footer</h3>
+</footer>
+
+
+</body>
+</html>

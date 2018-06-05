@@ -1,0 +1,239 @@
+$footer-bg-color: #ddd;
+@mixin first{
+  width: 100%;
+  text-align: center;
+}
+
+@mixin button{
+  background-color: $footer-bg-color;
+  border-radius: 20px;
+
+}
+
+// .btn-default{
+//   @include button;
+// }
+
+body {
+  // font-family: 'Roboto', sans-serif;
+  font-family: 'Indie Flower', cursive;
+}
+
+.logo {
+  margin-left: 50px;
+  height: 125px;
+  width: 225px;
+}
+
+
+.row img{
+  height: 150px;
+}
+
+.container {
+  margin-bottom: 50px;
+}
+
+
+
+.row1 {
+    display: block;
+    margin-right: 0;
+}
+
+.row{
+  display: block;
+}
+
+
+.panel-heading .accordion-toggle:after {
+    /* symbol for "opening" panels */
+    font-family: 'Glyphicons Halflings';  /* essential for enabling glyphicon */
+    content: "\e260";    /* adjust as needed, taken from bootstrap.css */
+    float: right;        /* adjust as needed */
+    color: grey;         /* adjust as needed */
+    transition: 0.5s transform ease-out;
+    // transform: rotate(180deg);
+}
+.panel-heading .accordion-toggle.collapsed:after {
+    /* symbol for "collapsed" panels */
+    // content: "\e259";    /* adjust as needed, taken from bootstrap.css */
+    content: "\e260";
+    transform: rotate(-180deg);
+    transition: 0.5s transform ease-out;
+}
+
+
+
+
+
+.img-responsive{
+  margin: 0 auto;
+  margin-bottom: 10px;
+  width: inherit;
+  border-radius: 6px;
+}
+
+.thumbnail{
+  height: 350px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+
+
+.card-container {
+  cursor: pointer;
+  height: 350px;
+  perspective: 600;
+  position: relative;
+  width: inherit;
+}
+.card {
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: all 0.5s ease-out;
+  width: 100%;
+}
+.card:hover {
+  transform: rotateY(180deg);
+}
+.card .side {
+  backface-visibility: hidden;
+  // border-radius: 6px;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+}
+.card .back {
+  text-align: center;
+  transform: rotateY(180deg);
+}
+
+
+
+
+
+@media (max-width: 768px) {
+    .row1 {
+        display:none !important;
+    }
+}
+
+
+
+.spinner-master2 * {
+    transition: all 0.3s;
+    box-sizing: border-box;
+}
+.spinner-master2 {
+    position: relative;
+    margin: 10px auto;
+    height: 30px;
+    width: 40px;
+}
+.spinner-master2 input[type=checkbox] {
+    display: none;
+}
+.spinner-master2 label {
+    cursor: pointer;
+    position: absolute;
+    z-index: 99;
+    height: 50%;
+    width: 100%;
+    top: 10px;
+    left: 0;
+}
+.spinner-master2 .spinner2 {
+    position: absolute;
+    height: 5px;
+    width: 100%;
+   background-color: #eee;
+   box-shadow: 0 3px 0 rgba(0, 0, 0, 0.1);
+}
+.spinner-master2 .diagonal.part-1 {
+    position: relative;
+    float: left;
+}
+.spinner-master2 .horizontal {
+    position: relative;
+    float: left;
+    margin-top: 7px;
+}
+.spinner-master2 .diagonal.part-2 {
+    position: relative;
+    float: left;
+    margin-top: 6px;
+}
+.spinner-master2 input[type=checkbox]:checked ~ .spinner-spin2 > .horizontal {
+    opacity: 0;
+}
+.spinner-master2 input[type=checkbox]:checked ~ .spinner-spin2 > .diagonal.part-1 {
+    transform: rotate(135deg);
+    margin-top: 5px;
+}
+.spinner-master2 input[type=checkbox]:checked ~ .spinner-spin2 > .diagonal.part-2 {
+    transform: rotate(-135deg);
+    margin-top: -16px;
+}
+.show .caret{
+  opacity: 0;
+  transition: opacity 0.3s ease-out;
+}
+
+.dropdown-menu a{
+  opacity: 0;
+}
+
+.show a{
+  opacity: 1;
+  transition: opacity 1s ease-out;
+}
+
+
+
+
+button{
+  color: black;
+  background-color: rgba(0,142,255,0.4);
+  border-radius: 30px;
+  border: 0;
+}
+
+button:hover{
+  background-color: rgba(0,142,255,0.7);
+  border-radius: 30px;
+  transition: all 0.3s ease-out;
+}
+
+button:focus{
+  background-color: rgba(0,142,255,1);
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+  border-radius: 30px;
+  transition: all 0.3s ease-out;
+}
+
+
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
